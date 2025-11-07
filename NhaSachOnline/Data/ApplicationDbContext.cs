@@ -5,7 +5,9 @@ namespace NhaSachOnline.Data
 {
   public class ApplicationDbContext : IdentityDbContext
   {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        internal object Books;
+
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
     }
